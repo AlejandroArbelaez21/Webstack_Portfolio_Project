@@ -8,7 +8,7 @@ class Team(models.Model):
     twitter_link = models.URLField(max_length=255)
     github_link = models.URLField(max_length=255)
     linkedin_link = models.URLField(max_length=255)
-    created_data = models.DateTimeField(auto_now_add=True)
+    created_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.first_name
