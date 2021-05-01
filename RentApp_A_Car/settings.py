@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'RentApp_A_Car.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'RentApp_Car_db',
+        'NAME': 'RentApp_Car',
         'USER': 'postgres',
         'PASSWORD': 'root',
         'HOST': 'localhost',
@@ -133,3 +133,6 @@ STATICFILES_DIRS = [
 #Media Settings
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+#DEFAUL SETTINGS
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
