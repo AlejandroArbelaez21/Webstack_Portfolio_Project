@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactsConfig',
     'django.contrib.humanize',
     'ckeditor',
     'cars.apps.CarsConfig',
