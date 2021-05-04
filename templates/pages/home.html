@@ -125,7 +125,7 @@
                             <a href="{% url 'car_detail' car.id %}" class="car-img">
                                 <div class="tag-2">Featured</div>
                                 <div class="price-box">
-                                    <span>${{ car.price | intcomma }}</span>
+                                    <span>${{ car.price | intcomma }} USD per day</span>
                                 </div>
                                 <img class="d-block w-100" src="{{ car.car_photo.url }}" alt="car">
                             </a>
@@ -211,8 +211,8 @@
                 <div class="car-box">
                     <div class="car-thumbnail">
                         <a href="{% url 'car_detail' car.id %}" class="car-img">
-                            <div class="tag">For Sale</div>
-                            <img class="d-block w-100" src="{{ car.car_photo.url }}" alt="car">
+                            <div class="tag">For Rent</div>
+                            <img class="d-block w-100" src="{{ car.car_photo.url }}" alt="car" style="min-height: 262px; max-height: 262px;">
                             <div class="facilities-list clearfix">
                                 <ul>
                                     <li>
@@ -222,7 +222,7 @@
                                         <span><i class="flaticon-calendar-1"></i></span>{{ car.year }}
                                     </li>
                                     <li>
-                                        <span><i class="flaticon-manual-transmission"></i></span>{{ car.trasnmission }}
+                                        <span><i class="flaticon-manual-transmission"></i></span>{{ car.transmission }}
                                     </li>
                                 </ul>
                             </div>
@@ -275,7 +275,7 @@
                             <p class="cartype">{{ car.body_style }}</p>
                         </div>
                         <div class="pull-right">
-                            <p class="price">${{ car.price | intcomma }}</p>
+                            <p class="price">${{ car.price | intcomma }} USD per day</p>
                         </div>
                     </div>
                 </div>
